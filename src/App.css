@@ -1,38 +1,69 @@
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-name {
+    text-align: center;
+}
+
 .App {
-  text-align: center;
+    padding: 50px;
+    height: calc(100vh - 100px);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-form {
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-form form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-form form input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.input-form form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.answer p {
+    padding: 10px;
+}
+
+.answer ul {
+    list-style: none;
+    padding: 0;
 }
